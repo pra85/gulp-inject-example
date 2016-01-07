@@ -3,10 +3,10 @@ var inject = require('gulp-inject'),
     path = require('path');
 
 gulp.task('build', function () {
-	views();
+	injects();
 });
-gulp.task('views', views);
-function views() {
+gulp.task('injects', injects);
+function injects() {
         gulp.src(path.normalize('./frontend/src/*.js'))
         .pipe(gulp.dest(path.normalize('./build/static')));
 		gulp.src(path.normalize('./app/index.html'))
