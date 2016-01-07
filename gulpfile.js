@@ -13,7 +13,7 @@ function views() {
 	    .pipe(inject(
             gulp.src([path.normalize('./frontend/src/*.js')], {read: false}), {
                 transform : function ( filePath, file, i, length ) {
-                     var newPath = filePath.replace('/frontend/src', '');
+                     var newPath = filePath.replace(path.normalize('/frontend/src'), '');
                      console.log('inject script = '+ newPath);
                      return '<script src="/static' + newPath  + '"></script>';
                 }
