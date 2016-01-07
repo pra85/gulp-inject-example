@@ -1,0 +1,12 @@
+{
+  "name": "gulp-inject-example",
+  "description": "A Project to check how Gulp Inject works with transform",
+  "scripts": {
+    "start": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-inject": "^3.0.0",
+    "path": "^0.12.7"
+  }
+}
